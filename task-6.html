@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <style>
+                  #controls {
+                  margin-bottom: 20px;
+      }
+
+                  #controls input[type="number"] {
+            padding: 8px;
+                                                      font-size: 16px;
+                                                      width: 150px;
+                                                      height: 40px;
+                                                      border-radius: 8px;
+                                                      gap 10px;
+                                                      border: 1px solid #ccc;
+            }
+
+                                                    #controls button {
+                                                      margin-left: 10px;
+                                                      padding: 10px 20px;
+                                                      font-size: 16px;
+                                                      cursor: pointer;
+                                                      background-color: #4e75ff;
+                                                      border-radius: 8px;
+                                                cursor: pointer;
+                                                border: none;
+                                                width: 120px;
+                                                height: 40px;
+                                                color: #FFFFFF;
+                                                    }
+
+                                                    #controls button:hover{
+                                                      background-color: #6C8CFF;
+                        ;
+
+                                                    }
+
+                                          #controls [data-destroy]{
+                                    background-color: #FF4E4E;
+                                          }
+                                          #controls [data-destroy]:hover{
+                              background: #FF7070;
+
+                                          }
+
+                                                    #boxes {
+                                                      display: flex;
+                                                      flex-wrap: wrap;
+                                                      gap: 10px;
+                                                    }
+                                                    #boxes div {
+                                                      width: 30px;
+                                                      height: 30px;
+                                                    }
+    </style>
+  </head>
+  <body>
+    <p><a href="./index.html">Go back</a></p>
+
+    <div id="controls">
+      <input type="number" min="1" max="100" step="1" />
+      <button type="button" data-create>Create</button>
+      <button type="button" data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes"></div>
+
+    <script src="./js/task-6.js" type="module"></script>
+  </body>
+</html>
